@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            
+            <div id="imagem">
+                <!-- Imagem inserida via CSS -->
+            </div>
+
+            <div id="formulario">
+                
+                <form action="cadastro.js" method="get">
+                    
+                    <div class="form-header">
+                        <h1>Cadastre-se</h1>
+                        <button class="login-button">Entrar</button>
+                    </div>
+
+                    <div class="campo">
+                        <label for="inome">Primeiro Nome</label>
+                        <input type="text" name="nome" id="inome">
+                    </div>
+
+                    <div class="campo">
+                        <label for="isobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="isobrenome">
+                    </div>
+
+                    <div class="campo">
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha">
+                    </div>
+
+                    <div class="campo">
+                        <label for="Iconfirma-senha">Confirme sua Senha</label>
+                        <input type="password" name="confirma-senha" id="Iconfirma-senha">
+                    </div>
+
+                    <div class="campo">
+                        <label for="iemail">E-mail</label>
+                        <input type="email" name="email" id="iemail">
+                    </div>
+
+                    <div class="campo">
+                        <label for="iphone">Celular</label>
+                        <input type="tel" name="phone" id="iphone">
+                    </div>
+
+                    <div class="campo">
+                        <fieldset style="border: none;">
+                            <legend>Gênero</legend>
+                            <input type="radio" name="sexo" id="fsex" value="F"><label for="fsex">Feminino</label>
+                            <input type="radio" name="sexo" id="msex" value="M"><label for="msex">Masculino</label>
+                            <input type="radio" name="sexo" id="osex" value="O"><label for="osex">Outros</label>
+                            <input type="radio" name="sexo" id="psex" value="NI"><label for="psex">Prefiro não dizer</label>
+                        </fieldset>
+                    </div>
+
+
+                    <div class="form-footer">
+                        <button>Continuar</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
