@@ -1,2 +1,43 @@
 @charset "UTF-8";
 
+@media screen and (min-width:992px) {
+    section{
+        width: 90vw;
+        height: 550px;
+    }
+
+    div#imagem{
+        width: 30%;
+        height: 100%;
+        float: left;
+        background-image: url(../imagens/shopping.svg);
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    div#formulario{
+        width: 70%;
+        height: 100%;
+        float: right;
+    }
+    
+    div.campo label#labelconfsenha{
+        margin-bottom: 30px;
+    }
+    
+
+    div#form-group{
+        height: 300px;
+        columns: 2;
+        padding: 20px;
+    }
+
+    div.gender label{
+        margin-left: -20em;
+    }
+
+   
+
+}
