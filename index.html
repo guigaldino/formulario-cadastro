@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
-    <title>Document</title>
+    <title>Formulário Cadastro</title>
 </head>
 
 <body>
@@ -31,47 +31,44 @@
 
                     <div class="campo">
                         <label for="inome">Primeiro Nome</label>
-                        <input type="text" name="nome" id="inome">
+                        <input type="text" name="nome" id="inome" required placeholder="Seu primeiro nome" >
                     </div>
 
                     <div class="campo">
                         <label for="isobrenome">Sobrenome</label>
-                        <input type="text" name="sobrenome" id="isobrenome">
+                        <input type="text" name="sobrenome" id="isobrenome" required placeholder="Seu Sobrenome" >
                     </div>
 
                     <div class="campo">
                         <label for="isenha">Senha</label>
-                        <input type="password" name="senha" id="isenha">
+                        <input type="password" name="senha" id="isenha" required min="8" max="15" placeholder="Escolha uma Senha">
                     </div>
 
                     <div class="campo">
                         <label for="Iconfirma-senha">Confirme sua Senha</label>
-                        <input type="password" name="confirma-senha" id="Iconfirma-senha">
+                        <input type="password" name="confirma-senha" id="Iconfirma-senha" required min="8" max="15" placeholder="Confirme sua Senha">
                     </div>
 
                     <div class="campo">
                         <label for="iemail">E-mail</label>
-                        <input type="email" name="email" id="iemail">
+                        <input type="email" name="email" id="iemail" required placeholder="xxxxxx@xxxxx.com" >
                     </div>
 
                     <div class="campo">
                         <label for="iphone">Celular</label>
-                        <input type="tel" name="phone" id="iphone">
+                        <input type="tel" name="phone" id="iphone" required placeholder="(xx)xxxxx-xxxx" >
                     </div>
 
-                    <div class="campo">
-                        <fieldset style="border: none;">
-                            <legend>Gênero</legend>
-                            <input type="radio" name="sexo" id="fsex" value="F"><label for="fsex">Feminino</label>
-                            <input type="radio" name="sexo" id="msex" value="M"><label for="msex">Masculino</label>
-                            <input type="radio" name="sexo" id="osex" value="O"><label for="osex">Outros</label>
-                            <input type="radio" name="sexo" id="psex" value="NI"><label for="psex">Prefiro não dizer</label>
-                        </fieldset>
-                    </div>
-
-
-                    <div class="form-footer">
-                        <button>Continuar</button>
+                    <div class="campo gender">
+                        <label for="igenero">Gênero</label>
+                        <select name="genero" id="igenero" required >
+                            <option value="">Selecione</option>
+                            <option value="F">Feminino</option>
+                            <option value="M">Masculino</option>
+                            <option value="O">Outro</option>
+                            <option value="NI">Não Informar</option>
+                        </select>
+                        <button type="submit">Continuar</button>
                     </div>
 
                 </form>
