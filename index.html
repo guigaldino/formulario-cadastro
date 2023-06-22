@@ -12,16 +12,39 @@
 </head>
 
 <body>
-    
+
     <section id="cadastro">
-        
+
         <div id="imagem">
             <!-- Imagem colocada via CSS -->
         </div>
 
         <div id="formulario">
-            <h1>Cadastre-se</h1>
-            <a href="#" id="btn_01">Entrar</a>
+
+
+            <div>
+                <h1>Cadastre-se</h1>
+                <a href="#" id="btn_01">Entrar</a>
+            </div>
+
+
+            <label for="inome">Primeiro Nome</label>
+            <input type="text" name="nome" id="inome">
+
+
+            <label for="isobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+
+            <fieldset style="border: none;">
+                <legend>Gênero</legend>
+                <input type="radio" name="sexo" id="fsex" value="F"><label for="fsex">Feminino</label>
+                <input type="radio" name="sexo" id="msex" value="M"><label for="msex">Masculino</label>
+                <input type="radio" name="sexo" id="osex" value="O"><label for="osex">Outros</label>
+                <input type="radio" name="sexo" id="nsex" value="NI"><label for="nsex">Não Informar</label>
+            </fieldset>
+
+            <a href="cadastro.js">Continuar</a>
+
         </div>
 
     </section>
